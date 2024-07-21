@@ -1,0 +1,163 @@
+body {
+  font-family: system-ui;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  top: 0;
+  background-color: rgb(248, 198, 72);
+  color: rgb(255, 255, 255);
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 160px;
+  margin-left: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 20px;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+main {
+  color: rgb(81, 0, 131);
+  font-family: system-ui;
+  text-align: center;
+  padding: 20px;
+}
+
+main h1 {
+  color: black;
+}
+
+#services {
+  padding: 60px;
+  color: black;
+  text-align: center;
+}
+
+.service a {
+  color: black;
+  text-decoration: none;
+}
+
+.service:hover {
+  background-color: rgb(248, 198, 72);
+  cursor: pointer;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service {
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 20px;
+  width: 160px;
+  text-align: center;
+}
+
+.service img {
+  width: 80px;
+  height: 80px;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  height: 40px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+footer nav ul {
+  text-align: right;
+  list-style: none;
+  padding: 0;
+  margin-right: 20px;
+}
+
+footer nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+footer nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.providers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.provider {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.provider img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.provider h3 {
+  margin: 10px 0 5px 0;
+}
+
+.provider p {
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+}
